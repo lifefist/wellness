@@ -18,7 +18,6 @@
   button{font-family:inherit;border:none;cursor:pointer;border-radius:.625rem}
   input,select{font-family:inherit}
 
-  /* 顶部 */
   .hdr{display:flex;align-items:flex-start;gap:.625rem;margin:.125rem 0 .875rem}
   .hdr-t{flex:1;font-size:1.1875rem;font-weight:700}
   .hdr-t small{display:block;font-size:.75rem;color:var(--sub);font-weight:400;margin-top:.25rem;line-height:1.5}
@@ -27,7 +26,6 @@
   .lbtn{background:#fff;border:1px solid #d9e2f2;color:var(--primary);font-size:.8125rem;font-weight:700;padding:.5625rem .75rem;border-radius:1.25rem;min-width:2.875rem}
   .sbtn{background:#fff;border:1px solid #f0d9ae;color:#c2760f;font-size:.8125rem;font-weight:700;padding:.5625rem .75rem;border-radius:1.25rem;white-space:nowrap}
 
-  /* 卡片 */
   .card{background:var(--card);border-radius:.875rem;padding:.875rem;margin-bottom:.875rem;
         box-shadow:0 2px 10px rgba(38,70,140,.07)}
   .card h2{font-size:.875rem;margin:0 0 .625rem;color:var(--sub);font-weight:600}
@@ -37,7 +35,6 @@
     font-size:.9375rem;color:var(--text);background:#f9fbff}
   input:focus,select:focus{outline:none;border-color:#a9c3ff;background:#fff}
 
-  /* 日期时间卡 */
   .clock{background:linear-gradient(135deg,#2f6bff,#5b8cff);color:#fff;text-align:center;
          padding:1rem .875rem .9375rem}
   .clk-time{font-size:2.375rem;font-weight:700;letter-spacing:.06em;line-height:1.1;
@@ -47,7 +44,6 @@
   .clk-line.term{margin-top:.3125rem;display:inline-block;background:rgba(255,255,255,.2);
                  padding:.1875rem .625rem;border-radius:1rem;font-weight:600}
 
-  /* 天气 */
   .wx-empty{font-size:.8125rem;color:var(--sub);padding:.25rem 0 .625rem}
   .wx-btns{display:flex;gap:.4375rem;flex-wrap:wrap;margin-top:.625rem}
   .wx-cityrow{display:none;gap:.5rem;margin-top:.5rem}
@@ -63,7 +59,6 @@
   .wx-meta{display:flex;flex-wrap:wrap;gap:.375rem .75rem;margin-top:.625rem;font-size:.8125rem;color:var(--text)}
   .wx-time{font-size:.6875rem;color:var(--sub);margin-top:.5rem}
 
-  /* 时间行 */
   .trow{display:flex;gap:.5rem;align-items:center;margin-bottom:.4375rem}
   .trow input{flex:1}
   .trow .del{background:#ffeceb;color:var(--danger);font-size:1.0625rem;font-weight:700;
@@ -74,7 +69,6 @@
   .primary:active{transform:scale(.98)}
   .link{background:none;color:var(--sub);font-size:.75rem;text-decoration:underline;padding:.5rem}
 
-  /* 今日列表 */
   .row{display:flex;align-items:center;gap:.625rem;padding:.625rem .5rem;border:1px solid var(--line);
        border-radius:.75rem;margin-bottom:.5rem;background:#fbfdff;cursor:pointer}
   .row .rt{font-size:1.0625rem;font-weight:700;font-variant-numeric:tabular-nums;flex:0 0 3.25rem}
@@ -98,7 +92,6 @@
   .allDone{background:#f2fbf6;color:var(--ok);font-size:.875rem;font-weight:700;
            padding:.625rem .75rem;border-radius:.625rem;margin-top:.5rem;text-align:center}
 
-  /* 药物清单 */
   .mrow{display:flex;align-items:center;gap:.5rem;padding:.5rem 0;border-bottom:1px dashed var(--line)}
   .mrow:last-child{border-bottom:none}
   .mrow .mn{flex:1;min-width:0;font-size:.875rem;font-weight:600;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
@@ -107,7 +100,6 @@
   .mrow .edit-b{background:#e8f0ff;color:var(--primary)}
   .mrow .del{background:#ffeceb;color:var(--danger)}
 
-  /* 服药记录 */
   .segrange{display:flex;gap:.375rem;flex-wrap:wrap;margin-bottom:.5rem}
   .segrange button{background:#f1f4fa;color:var(--sub);font-size:.75rem;font-weight:700;padding:.4375rem .6875rem}
   .segrange button.on{background:#e8f0ff;color:var(--primary)}
@@ -122,9 +114,16 @@
   .lsum{margin-top:.625rem;font-size:.75rem;color:var(--sub)}
   .tooline{display:flex;gap:.5rem;margin-top:.75rem;flex-wrap:wrap}
 
+  /* 使用统计 */
+  .statrow{display:flex;gap:.625rem}
+  .statbox{flex:1;background:#f6f9ff;border-radius:.75rem;padding:.75rem .5rem;text-align:center}
+  .statnum{font-size:1.375rem;font-weight:700;color:var(--primary);
+           font-variant-numeric:tabular-nums;line-height:1.2;word-break:break-all}
+  .statlbl{font-size:.6875rem;color:var(--sub);margin-top:.25rem}
+  .statnote{font-size:.6875rem;color:var(--sub);margin-top:.625rem;line-height:1.5;text-align:center}
+
   .foot{font-size:.75rem;color:var(--sub);text-align:center;line-height:1.6;padding:.25rem .5rem}
 
-  /* 聚光灯 */
   .spot{position:fixed;border-radius:.875rem;box-shadow:0 0 0 9999px rgba(15,25,45,.72);
         pointer-events:none;display:none;z-index:70;transition:all .25s ease}
   .spot.on{display:block}
@@ -138,7 +137,6 @@
   .gd{font-size:.8125rem;line-height:1.6;color:#41526e}
   .gbtns{display:flex;align-items:center;gap:.5rem;margin-top:.6875rem;flex-wrap:wrap}
 
-  /* 弹窗 */
   .mask{position:fixed;inset:0;background:rgba(18,28,48,.55);display:none;align-items:center;
         justify-content:center;padding:1rem;z-index:80;overflow-y:auto}
   .mask.on{display:flex}
@@ -157,7 +155,6 @@
   .dbtns .primary{width:auto;margin-top:0}
   .dbtns .mini{font-size:.9375rem;font-weight:700;padding:.75rem 1rem}
 
-  /* 状态选择 */
   .seg{display:flex;gap:.375rem;margin-top:.875rem}
   .seg button{flex:1;background:#f1f4fa;color:var(--text);font-size:.875rem;font-weight:600;padding:.625rem .25rem}
   .seg button.on{background:var(--primary);color:#fff}
@@ -165,7 +162,6 @@
   .seg button.on[data-s=skipped]{background:#8a93a6}
   .recTip{font-size:.6875rem;color:var(--sub);margin-top:.625rem;line-height:1.5}
 
-  /* 页面内提示条 */
   .toast{position:fixed;left:50%;bottom:1.5rem;transform:translateX(-50%) translateY(.5rem);
          background:rgba(28,38,58,.94);color:#fff;font-size:.8125rem;padding:.625rem .875rem;
          border-radius:.625rem;max-width:20rem;text-align:center;line-height:1.5;opacity:0;
@@ -250,6 +246,25 @@
   </section>
 
   <div class="foot" id="footTip">漏服的药整条会标红闪烁；点任意一条记录，可以改成真实的服药时间。</div>
+
+  <!-- 使用统计（页面最下方） -->
+  <section class="card" id="statCard">
+    <h2 id="statTitle">使用统计</h2>
+    <div class="statrow">
+      <div class="statbox">
+        <div class="statnum" id="statLocal">0</div>
+        <div class="statlbl" id="statLocalLbl">本机使用次数</div>
+      </div>
+      <div class="statbox">
+        <div class="statnum" id="statGlobal">—</div>
+        <div class="statlbl" id="statGlobalLbl">全局累计次数</div>
+      </div>
+    </div>
+    <div class="statnote" id="statNote"></div>
+    <div style="text-align:center">
+      <button class="mini" id="statRetry" style="display:none;margin-top:.5rem">重试</button>
+    </div>
+  </section>
 </div>
 
 <div class="spot" id="spot"></div>
@@ -351,6 +366,7 @@ var GUIDE_KEY   = 'medReminder_guide_v1';
 var LANG_KEY    = 'medReminder_lang_v1';
 var SENIOR_KEY  = 'medReminder_senior_v1';
 var WX_KEY      = 'medReminder_weather_v1';
+var STAT_KEY    = 'medReminder_stat_v1';           /* 本机使用次数 */
 var EARLY_MIN         = 5;
 var SNOOZE_MIN        = 10;
 var MISS_AFTER_MIN    = 30;
@@ -360,6 +376,13 @@ var WX_REFRESH_MIN    = 30;
 var LOG_KEEP_DAYS     = 400;
 var TIME_SHIFT_MAX_MIN = 180;
 var NIGHT_SHIFT_MIN   = 360;
+
+/* —— 全局计数（公共计数服务，零后端）—— */
+var COUNT_API  = 'https://abacus.jasoncameron.dev';
+var COUNT_NS   = 'med-reminder-2026-x7k';          /* 命名空间：换成你自己的一串独特字符，避免和别人撞 */
+var COUNT_KEY  = 'app-opens';                      /* 计数器名字 */
+var COUNT_ONCE_PER_DAY = false;                    /* true = 同一台设备每天只上报一次（更接近“活跃设备天”） */
+var COUNT_TIMEOUT_MS = 8000;
 
 /* ===================== 小工具 ===================== */
 function el(id){ return document.getElementById(id); }
@@ -438,6 +461,16 @@ var DICT = {
     errMedName:'请填写药物名称', errTime:'请至少添加一个提醒时间', errDays:'持续天数至少为 1 天',
     overwrite:'该时间点原有记录已被覆盖',
     exportEmpty:'还没有记录可以导出', exportFail:'导出失败，请换一个浏览器再试', exportDone:'已导出 {{n}} 条记录',
+
+    statTitle:'使用统计',
+    statLocalLbl:'本机使用次数',
+    statGlobalLbl:'全局累计次数',
+    statLoading:'正在获取全局数据…',
+    statOk:'已同步 · {{t}}',
+    statFail:'暂时拿不到全局数据（离线或服务不可用），点“重试”再试',
+    statRetry:'重试',
+    statNote:'全局数字来自公共计数服务，每次打开会向它发一条自增请求，不上传任何个人信息，也不影响本机功能。',
+
     ringTitle:'该吃药了', ringMsg:'{{name}}　{{dose}}', ringTaken:'已服用', ringSnooze:'稍后提醒',
     missTitle:'漏服提醒', missMsg:'为了保证您的身体健康，一定要遵医嘱按时服药！', missOk:'我知道了',
     cheerTitle:'今天全部完成！', cheerMsg:'太棒了，今天的药一顿都没落下',
@@ -455,7 +488,7 @@ var DICT = {
     g8t:'第三步：持续天数与开始日期', g8d:'填持续吃多少天、从哪天开始，保存后会自动排好每天的提醒。',
     g9t:'第四步：随时修改', g9d:'药物清单里点“编辑”就能改药名、用量、时间或天数，不用删掉重录；今天已经记录的服药情况会跟着一起对应好，过去的日子不动。',
     g10t:'今日提醒与真实记录', g10d:'到点前 5 分钟响铃并循环，关掉即记下真实的服药时刻；超过 30 分钟没吃会标红闪烁。点任意一条都能改成真实情况。',
-    g11t:'服药记录、补记与导出', g11d:'记录可切近 7 天 / 近 30 天 / 全部。忘了记就点“＋补记”，选任意过去日期补上；想留存或给医生看，点“导出 CSV”或“导出文本”。'
+    g11t:'服药记录、补记与导出', g11d:'记录可切近 7 天 / 近 30 天 / 全部。忘了记就点“＋补记”，选任意过去日期补上；想留存或给医生看，点“导出 CSV”或“导出文本”。页面最下方还能看到本机和全局的使用次数。'
   },
   en: {
     title:'Medicine Reminder', sub:'On time, every dose',
@@ -495,6 +528,16 @@ var DICT = {
     errMedName:'Please enter the medicine name', errTime:'Please add at least one reminder time', errDays:'Days must be at least 1',
     overwrite:'The existing record for that time was overwritten',
     exportEmpty:'No records to export', exportFail:'Export failed — try another browser', exportDone:'Exported {{n}} records',
+
+    statTitle:'Usage stats',
+    statLocalLbl:'Uses on this device',
+    statGlobalLbl:'Global total',
+    statLoading:'Fetching the global number…',
+    statOk:'Synced · {{t}}',
+    statFail:'Global number unavailable (offline or service down). Tap Retry.',
+    statRetry:'Retry',
+    statNote:'The global number comes from a public counter service — one increment request per open. No personal data is sent, and nothing here affects the app.',
+
     ringTitle:'Time for your medicine', ringMsg:'{{name}}　{{dose}}', ringTaken:'Taken', ringSnooze:'Snooze',
     missTitle:'Missed dose', missMsg:'为了保证您的身体健康，一定要遵医嘱按时服药！', missOk:'Got it',
     cheerTitle:'All done today!', cheerMsg:'Great job — every dose taken on time',
@@ -512,7 +555,7 @@ var DICT = {
     g8t:'Step 3: days & start date', g8d:'Set how many days and the start date — every dose gets scheduled.',
     g9t:'Step 4: edit anytime', g9d:'Tap “Edit” in My medicines to change name, dose, times or days. Today\'s records follow along; past days are never rewritten.',
     g10t:'Reminders & true records', g10d:'Rings 5 minutes early and loops; closing it logs the real time taken. Over 30 minutes late the row blinks red. Tap any row to correct it.',
-    g11t:'Log, back-fill & export', g11d:'View the last 7 / 30 days or everything. Forgot to log? Tap “＋ Back-fill” and pick any past date. Export as CSV or text anytime.'
+    g11t:'Log, back-fill & export', g11d:'View the last 7 / 30 days or everything. Forgot to log? Tap “＋ Back-fill” and pick any past date. Export as CSV or text anytime — and the very bottom shows local and global usage counts.'
   }
 };
 
@@ -542,22 +585,18 @@ var DOC_SVG =
   '<circle cx="26" cy="99" r="4.5" fill="#22304a"/>' +
 '</svg>';
 
-/* ===================== 状态 =====================
-   S.meds : 药物列表
-   S.log  : 真实服药记录，键 "YYYY-MM-DD|medId|HH:MM"
-            值 { st:'taken'|'missed'|'skipped', at:实际服药时间戳或null,
-                 src:'alarm'|'manual'|'auto'|'back'|'migrated', n:当时的药名快照 }
-   ============================================== */
+/* ===================== 状态 ===================== */
 var S = { meds: [], log: {}, celebrated: {} };
-var editingId = null;        /* 正在编辑的药物 id；null = 新增模式 */
-var logRange = 7;            /* 服药记录显示范围：7 / 30 / 0(全部) */
-var recEditKey = null;       /* 记录弹窗正在编辑的记录键；null = 补记新的 */
+var editingId = null;
+var logRange = 7;
+var recEditKey = null;
 var recStatus = '';
 var lastMiss = {}, nearMiss = {}, rowMap = {};
 var ringKey = null, missTimer = null, cfTimer = null;
-var ac = null, beepTimer = null, toastTimer2 = null;
+var ac = null, beepTimer = null;
 var wxData = null;
 var senior = false;
+var stat = { local:0, day:'' };
 
 function load(){
   try {
@@ -608,6 +647,70 @@ function nameOf(id, r){
   return t('deletedMed');
 }
 
+/* ===================== 使用次数统计 ===================== */
+function statLoad(){
+  try {
+    var o = JSON.parse(localStorage.getItem(STAT_KEY) || 'null');
+    if (o) { stat.local = o.local || 0; stat.day = o.day || ''; }
+  } catch (e) {}
+}
+function statSave(){
+  try { localStorage.setItem(STAT_KEY, JSON.stringify({ local:stat.local, day:stat.day })); } catch (e) {}
+}
+/* 本机使用次数：每次打开页面 +1 */
+function statCountLocal(){
+  stat.local = (stat.local || 0) + 1;
+  statSave();
+  el('statLocal').textContent = stat.local;
+}
+/* 是否要向全局计数器上报一次 */
+function statNeedReport(){
+  if (!COUNT_ONCE_PER_DAY) return true;
+  var today = dk(new Date());
+  if (stat.day === today) return false;
+  stat.day = today; statSave();
+  return true;
+}
+function statUrl(act){
+  return COUNT_API + '/' + act + '/' + encodeURIComponent(COUNT_NS) + '/' + encodeURIComponent(COUNT_KEY);
+}
+/* 带超时的请求：有些浏览器 file:// 下 fetch 会一直挂着 */
+function statRequest(url){
+  return new Promise(function(resolve, reject){
+    var done = false;
+    var timer = setTimeout(function(){ if (!done) { done = true; reject(new Error('timeout')); } }, COUNT_TIMEOUT_MS);
+    fetch(url, { cache:'no-store' })
+      .then(function(r){ return r.json(); })
+      .then(function(j){
+        if (done) return;
+        done = true; clearTimeout(timer);
+        var v = (j && j.value !== undefined) ? j.value : (typeof j === 'number' ? j : null);
+        if (v === null) reject(new Error('bad response')); else resolve(v);
+      })
+      .catch(function(err){ if (!done) { done = true; clearTimeout(timer); reject(err); } });
+  });
+}
+function statRender(note){
+  if (note) el('statNote').textContent = note;
+  el('statRetry').style.display = 'none';
+}
+function statUpdate(){
+  el('statGlobal').textContent = '…';
+  el('statNote').textContent = t('statLoading');
+  el('statRetry').style.display = 'none';
+
+  var p = statNeedReport() ? statRequest(statUrl('hit')) : statRequest(statUrl('get'));
+  p.then(function(v){
+    el('statGlobal').textContent = v;
+    var now = new Date();
+    statRender(fmt(t('statOk'), { t: pad(now.getHours()) + ':' + pad(now.getMinutes()) }));
+  }).catch(function(){
+    el('statGlobal').textContent = '—';
+    el('statNote').textContent = t('statFail');
+    el('statRetry').style.display = 'inline-block';
+  });
+}
+
 /* ===================== 语言 / 大字版 ===================== */
 try { senior = localStorage.getItem(SENIOR_KEY) === '1'; } catch (e) {}
 
@@ -631,7 +734,7 @@ function applyLang(){
   el('wxLocate').textContent = t('wxLocate');
   el('wxManual').textContent = t('wxManual');
   el('wxRefresh').textContent = t('wxRefresh');
-  el('wxCityGo').textContent = t('recSave') === 'Save' ? 'OK' : '确定';
+  el('wxCityGo').textContent = (lang === 'en') ? 'OK' : '确定';
   el('wxCityInput').placeholder = t('wxCityPh');
   el('lbName').textContent = t('fName');
   el('lbDose').textContent = t('fDose');
@@ -675,6 +778,11 @@ function applyLang(){
   el('recSeg').querySelector('[data-s=taken]').textContent = t('recTaken');
   el('recSeg').querySelector('[data-s=missed]').textContent = t('recMissed');
   el('recSeg').querySelector('[data-s=skipped]').textContent = t('recSkipped');
+
+  el('statTitle').textContent = t('statTitle');
+  el('statLocalLbl').textContent = t('statLocalLbl');
+  el('statGlobalLbl').textContent = t('statGlobalLbl');
+  el('statRetry').textContent = t('statRetry');
 
   each(el('logRange').querySelectorAll('button'), function(b){
     b.classList.toggle('on', parseInt(b.getAttribute('data-r'), 10) === logRange);
@@ -747,14 +855,13 @@ function termText(now){
   return t('nextTerm') + ' ' + termName(info.next.i) + ' · ' + info.next.m + '/' + info.next.d +
          '（' + fmt(t('termAfter'), { n:days }) + '）';
 }
-/* 农历：用浏览器内置中国农历（Intl）；不支持时宁可不显示，也不写错 */
 function lunarText(d){
   try {
     if (!window.Intl || !Intl.DateTimeFormat) return '';
     var f = new Intl.DateTimeFormat('zh-CN-u-ca-chinese', { year:'numeric', month:'long', day:'numeric' });
     if (f.resolvedOptions) {
       var cal = f.resolvedOptions().calendar || '';
-      if (cal && cal !== 'chinese') return '';     /* 没真正支持农历 → 不显示，避免显示成公历 */
+      if (cal && cal !== 'chinese') return '';
     }
     if (!f.formatToParts) return '';
     var parts = f.formatToParts(d), o = {}, i;
@@ -1094,7 +1201,6 @@ function endEdit(){
   syncFormLabels();
   renderMeds();
 }
-/* 编辑后的记录迁移：只把“同一次服药”带过去，过去几天一律不动 */
 function migrateTodayRecords(oldMed, newMed){
   var today = dk(new Date());
   var oT = (oldMed.times || []).slice().sort();
@@ -1397,7 +1503,7 @@ var STEPS = [
   { sel:'#fDays',     t:'g8t',  d:'g8d'  },
   { sel:'#saveMed',   t:'g9t',  d:'g9d'  },
   { sel:'#listCard',  t:'g10t', d:'g10d' },
-  { sel:'#logCard',   t:'g11t', d:'g11d' }
+  { sel:'#statCard',  t:'g11t', d:'g11d' }
 ];
 var gd = { active:false, i:0 };
 
@@ -1461,7 +1567,7 @@ function tick(){
 el('langBtn').onclick = function(){
   lang = (lang === 'zh') ? 'en' : 'zh';
   try { localStorage.setItem(LANG_KEY, lang); } catch (e) {}
-  applyLang(); renderToday(new Date()); renderMeds(); renderLog(); wxRender();
+  applyLang(); renderToday(new Date()); renderMeds(); renderLog(); wxRender(); statRefreshNote();
 };
 el('seniorBtn').onclick = function(){
   senior = !senior;
@@ -1515,7 +1621,6 @@ el('saveMed').onclick = function(){
   renderLog();
 };
 
-/* —— 记录编辑 / 补记弹窗交互 —— */
 each(el('recSeg').querySelectorAll('button'), function(b){
   b.onclick = function(){
     recStatus = b.getAttribute('data-s');
@@ -1563,7 +1668,6 @@ el('recSave').onclick = function(){
   if (replaced) toast(t('overwrite'));
 };
 
-/* —— 服药记录：范围 / 补记 / 导出 —— */
 each(el('logRange').querySelectorAll('button'), function(b){
   b.onclick = function(){
     logRange = parseInt(b.getAttribute('data-r'), 10);
@@ -1573,6 +1677,8 @@ each(el('logRange').querySelectorAll('button'), function(b){
 el('logAdd').onclick = function(){ openRecEditor(null); };
 el('logCsv').onclick = function(){ exportCsv(); };
 el('logTxt').onclick = function(){ exportTxt(); };
+
+el('statRetry').onclick = function(){ statUpdate(); };
 
 el('ringTaken').onclick = function(){
   if (ringKey) {
@@ -1627,11 +1733,17 @@ document.addEventListener('visibilitychange', function(){
   }
 });
 
+/* 切换语言时同步统计区的说明文字 */
+function statRefreshNote(){
+  if (el('statGlobal').textContent === '…') el('statNote').textContent = t('statLoading');
+  else if (el('statRetry').style.display === 'inline-block') el('statNote').textContent = t('statFail');
+  else el('statNote').textContent = t('statNote');
+}
+
 /* ===================== 启动 ===================== */
 try {
   load();
 
-  /* 卡通大夫：四处容器统一注入 */
   el('ringDoc').innerHTML = DOC_SVG;
   el('missDoc').innerHTML = DOC_SVG;
   el('cheerDoc').innerHTML = DOC_SVG;
@@ -1645,6 +1757,11 @@ try {
   renderLog();
   renderClock(new Date());
   save();
+
+  /* 使用次数：先记本机，再去拿全局；无论全局成功与否都不影响本机 */
+  statLoad();
+  statCountLocal();
+  statUpdate();
 
   if (wxData && wxData.lat != null) wxFetch(wxData.lat, wxData.lon, wxData.place);
 
@@ -1666,5 +1783,5 @@ try {
 
 })();
 </script>
-<body>
-</html>
+</body>
+  </html>
